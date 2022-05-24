@@ -18,3 +18,37 @@ body{
     font-weight: 500;
     font-size: 1.6rem;
 }
+
+.quote-container{
+    width: 67vw;
+    padding: 2rem 1rem;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.quote-text{
+    font-size: 2rem;
+}
+
+.long-quote{
+    font-size:1.5rem;
+}
+
+.fa-quote-left{
+    font-size: 2rem;
+}
+
+.quote-author{
+    margin-top: 1.75rem;
+    font-size: 1.38rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.button-container{
+    margin-inline: 2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
