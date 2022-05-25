@@ -24,3 +24,23 @@ function newQuotes(){
     }
     quoteText.textContent = quote.text;
 }
+// get quotes from api
+async function getQuotes(){
+    const apiUrl= 'https://type.fit/api/quotes';
+    try{
+        const response = await fetch(apiUrl);
+        apiQuotes = await response.json();
+        newQuotes();
+    }catch(error){
+        alert(error);
+    }
+}
+
+// Tweet quote
+function tweetQuote(){
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${authorText.textContent}`;
+    window.open(twitterUrl,)
+}
+
+//on load
+getQuotes();
