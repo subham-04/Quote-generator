@@ -2,7 +2,7 @@ const quoteContainer = document.getElementById("quote-container");
 const quoteText = document.getElementById("quote");
 const authorText= document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
-const newQuote = document.getElementById("new-quote");
+const newQuoteBtn = document.getElementById("new-quote");
 
 
 let apiQuotes = [];
@@ -24,6 +24,7 @@ function newQuotes(){
     }
     quoteText.textContent = quote.text;
 }
+
 // get quotes from api
 async function getQuotes(){
     const apiUrl= 'https://type.fit/api/quotes';
@@ -45,5 +46,6 @@ function tweetQuote(){
 // Event listeners
 newQuoteBtn.addEventListener("click", newQuotes);
 twitterBtn.addEventListener("click", tweetQuote);
+
 //on load
 getQuotes();
