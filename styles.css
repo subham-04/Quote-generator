@@ -47,7 +47,6 @@ body{
 }
 
 .button-container{
-    margin-inline: 2rem;
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
